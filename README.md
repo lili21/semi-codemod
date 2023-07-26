@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-$ npx semi-code <path> <transform>
+$ npx semi-codemod <path> <transform>
 ```
 
 Replacing `<path>` and `<transform>` with appropriate values.
