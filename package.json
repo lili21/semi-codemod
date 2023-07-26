@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "bin": "./bin/semi-codemod.js",
+  "scripts": {
+    "release": "release-it"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,5 +19,8 @@
     "inquirer": "7.3.3",
     "jscodeshift": "^0.15.0",
     "meow": "7.0.1"
+  },
+  "devDependencies": {
+    "release-it": "^16.1.3"
   }
 }

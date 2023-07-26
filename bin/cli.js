@@ -56,8 +56,8 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   },
   {
     name: 'Breadcrumb',
-    value: 'Breadcrumb'
-  }
+    value: 'Breadcrumb',
+  },
 ]
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
