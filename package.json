@@ -1,0 +1,20 @@
+{
+  "name": "semi-codemod",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "./bin/semi-codemod.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "transforms/*.js",
+    "bin/*.js"
+  ],
+  "dependencies": {
+    "execa": "4.0.3",
+    "globby": "11.0.1",
+    "inquirer": "7.3.3",
+    "jscodeshift": "^0.15.0",
+    "meow": "7.0.1"
+  }
+}
