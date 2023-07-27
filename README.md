@@ -23,7 +23,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Divider
 - [ ] Table
 - [x] Breadcrumb
-- [ ] Notification
+- [x] Notification
 - [ ] message
 - [ ] Button
 - [ ] Popconfirm
