@@ -18,7 +18,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 
 - [x] Divider
 - [ ] Table
-- [ ] Breadcrumb
+- [x] Breadcrumb
 - [ ] Notification
 - [ ] message
 - [ ] Button

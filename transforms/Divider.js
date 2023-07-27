@@ -12,7 +12,7 @@ module.exports = function transformer(file, api) {
   // Find the named import specifiers
   const namedSpecifiers = antdImportDeclaration.find(j.ImportSpecifier)
 
-  // Find the import specifiers for Divider and remove
+  // Find the import specifiers for Divider
   const dividerImportDeclaration = antdImportDeclaration.find(
     j.ImportSpecifier,
     {
@@ -22,8 +22,10 @@ module.exports = function transformer(file, api) {
     }
   )
 
+  // Remove the Divider import specifier
   dividerImportDeclaration.remove()
 
+  // Remove the antd import
   if (dividerImportDeclaration.length && namedSpecifiers.length === 1) {
     antdImportDeclaration.remove()
   }
