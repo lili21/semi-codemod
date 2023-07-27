@@ -5,8 +5,8 @@ module.exports = function transformer(file, api) {
   // Find the import declaration for antd
   const antdImportDeclaration = root.find(j.ImportDeclaration, {
     source: {
-      value: 'antd',
-    },
+      value: 'antd'
+    }
   })
 
   // Find the named import specifiers
@@ -17,8 +17,8 @@ module.exports = function transformer(file, api) {
     j.ImportSpecifier,
     {
       imported: {
-        name: 'Divider',
-      },
+        name: 'Divider'
+      }
     }
   )
 
@@ -33,8 +33,8 @@ module.exports = function transformer(file, api) {
   // Find the import declaration for semi-ui
   const semiUiImportDeclaration = root.find(j.ImportDeclaration, {
     source: {
-      value: '@douyinfe/semi-ui',
-    },
+      value: '@douyinfe/semi-ui'
+    }
   })
 
   if (semiUiImportDeclaration.length) {
@@ -42,8 +42,8 @@ module.exports = function transformer(file, api) {
     if (
       !semiUiImportDeclaration.find(j.ImportSpecifier, {
         imported: {
-          name: 'Divider',
-        },
+          name: 'Divider'
+        }
       }).length
     ) {
       semiUiImportDeclaration

@@ -1,13 +1,13 @@
 export default function transformer(file, api) {
-  const j = api.jscodeshift;
-  const root = j(file.source);
+  const j = api.jscodeshift
+  const root = j(file.source)
 
   // Find the import declaration for antd
   const antdImportDeclaration = root.find(j.ImportDeclaration, {
     source: {
       value: 'antd'
     }
-  });
+  })
 
   // Find the named import specifiers
   const namedSpecifiers = antdImportDeclaration.find(j.ImportSpecifier)
@@ -17,10 +17,10 @@ export default function transformer(file, api) {
     imported: {
       name: 'Breadcrumb'
     }
-  });
+  })
 
   // Remove the Breadcrumb import specifier
-  breadcrumbSpecifier.remove();
+  breadcrumbSpecifier.remove()
 
   // Remove the antd import
   if (breadcrumbSpecifier.length && namedSpecifiers.length === 1) {
@@ -30,8 +30,8 @@ export default function transformer(file, api) {
   // Find the import declaration for semi-ui
   const semiUiImportDeclaration = root.find(j.ImportDeclaration, {
     source: {
-      value: '@douyinfe/semi-ui',
-    },
+      value: '@douyinfe/semi-ui'
+    }
   })
 
   if (semiUiImportDeclaration.length) {
@@ -39,8 +39,8 @@ export default function transformer(file, api) {
     if (
       !semiUiImportDeclaration.find(j.ImportSpecifier, {
         imported: {
-          name: 'Breadcrumb',
-        },
+          name: 'Breadcrumb'
+        }
       }).length
     ) {
       semiUiImportDeclaration
@@ -58,7 +58,7 @@ export default function transformer(file, api) {
   }
 
   // Find the Breadcrumb component usage
-  const breadcrumbUsage = root.findJSXElements('Breadcrumb');
+  const breadcrumbUsage = root.findJSXElements('Breadcrumb')
 
   // Add the compact={false} prop to the Breadcrumb component
   breadcrumbUsage.forEach((path) => {
@@ -67,8 +67,8 @@ export default function transformer(file, api) {
         j.jsxIdentifier('compact'),
         j.jsxExpressionContainer(j.booleanLiteral(false))
       )
-    );
-  });
+    )
+  })
 
-  return root.toSource();
+  return root.toSource()
 }

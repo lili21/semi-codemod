@@ -41,7 +41,7 @@ function runTransform({ files, flags, transformer }) {
 
   const result = execa.sync(jscodeshiftExecutable, args, {
     stdio: 'inherit',
-    stripFinalNewline: false,
+    stripFinalNewline: false
   })
 
   if (result.failed) {
@@ -52,12 +52,16 @@ function runTransform({ files, flags, transformer }) {
 const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Divider',
-    value: 'Divider',
+    value: 'Divider'
   },
   {
     name: 'Breadcrumb',
-    value: 'Breadcrumb',
+    value: 'Breadcrumb'
   },
+  {
+    name: 'Notification',
+    value: 'Notification'
+  }
 ]
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
@@ -85,9 +89,9 @@ module.exports.run = () => {
       boolean: ['dry', 'print', 'help'],
       string: ['_'],
       alias: {
-        h: 'help',
-      },
-    },
+        h: 'help'
+      }
+    }
   })
 
   if (
@@ -110,7 +114,7 @@ module.exports.run = () => {
         when: !cli.input[0],
         default: '.',
         // validate: () =>
-        filter: (files) => files.trim(),
+        filter: (files) => files.trim()
       },
       {
         type: 'list',
@@ -118,8 +122,8 @@ module.exports.run = () => {
         message: 'Which transform would you like to apply?',
         when: !cli.input[1],
         pageSize: TRANSFORMER_INQUIRER_CHOICES.length,
-        choices: TRANSFORMER_INQUIRER_CHOICES,
-      },
+        choices: TRANSFORMER_INQUIRER_CHOICES
+      }
     ])
     .then((answers) => {
       const { files, transformer } = answers
@@ -137,7 +141,7 @@ module.exports.run = () => {
       return runTransform({
         files: filesExpanded,
         flags: cli.flags,
-        transformer: selectedTransformer,
+        transformer: selectedTransformer
       })
     })
 }
