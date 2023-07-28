@@ -1,61 +1,9 @@
+const { removeAntdImportAndAddSemiImport } = require('./utils')
 export default function transformer(file, api) {
   const j = api.jscodeshift
   const root = j(file.source)
 
-  // Find the import declaration for antd
-  const antdImportDeclaration = root.find(j.ImportDeclaration, {
-    source: {
-      value: 'antd'
-    }
-  })
-
-  // Find the named import specifiers
-  const namedSpecifiers = antdImportDeclaration.find(j.ImportSpecifier)
-
-  // Find the import specifier for Breadcrumb
-  const notificationSpecifier = antdImportDeclaration.find(j.ImportSpecifier, {
-    imported: {
-      name: 'notification'
-    }
-  })
-
-  // Remove the 'notification' import specifier
-  notificationSpecifier.remove()
-
-  // Remove the antd import
-  if (notificationSpecifier.length && namedSpecifiers.length === 1) {
-    antdImportDeclaration.remove()
-  }
-
-  // Find the import declaration for semi-ui
-  const semiUiImportDeclaration = root.find(j.ImportDeclaration, {
-    source: {
-      value: '@douyinfe/semi-ui'
-    }
-  })
-
-  if (semiUiImportDeclaration.length) {
-    // Add the Notification import specifier to semi-ui
-    if (
-      !semiUiImportDeclaration.find(j.ImportSpecifier, {
-        imported: {
-          name: 'Notification'
-        }
-      }).length
-    ) {
-      semiUiImportDeclaration
-        .get('specifiers')
-        .push(j.importSpecifier(j.identifier('Notification')))
-    }
-  } else {
-    // Add the Notification import specifier from semi-ui
-    antdImportDeclaration.insertAfter(
-      j.importDeclaration(
-        [j.importSpecifier(j.identifier('Notification'))],
-        j.literal('@douyinfe/semi-ui')
-      )
-    )
-  }
+  removeAntdImportAndAddSemiImport(j, root, 'notification', 'Notification')
 
   // Transform notification
   root
