@@ -23,7 +23,7 @@ const TRANSFORMER_INQUIRER_CHOICES = [
 
 ### 第三步
 
-可以参考已有的transform代码。也可以使用 [codemod-gpt](https://codemod-gpt.vercel.app) 来生成一份初始的代码，在此技术上修改
+可以参考已有的transform代码。也可以使用 [codemod-gpt](https://codemod-gpt.vercel.app) 来生成一份初始的代码，在此基础上修改
 
 ### 调试
 
