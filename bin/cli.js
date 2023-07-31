@@ -1,8 +1,3 @@
-// import meow from 'meow'
-// import { execa } from 'execa'
-// import inquirer from 'inquirer'
-// import { globby } from 'globby'
-// import path from 'path'
 const meow = require('meow')
 const execa = require('execa')
 const inquirer = require('inquirer')
@@ -32,6 +27,7 @@ function runTransform({ files, flags, transformer }) {
   args.push('--ignore-pattern=**/dist/**')
 
   args.push('--extensions=tsx,ts,jsx,js')
+  args.push('--parser=tsx')
 
   args = args.concat(['--transform', transformerPath])
 
@@ -61,6 +57,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Notification',
     value: 'Notification'
+  },
+  {
+    name: 'Table',
+    value: 'Table'
   }
 ]
 
