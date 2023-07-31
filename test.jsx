@@ -1,17 +1,17 @@
-import { Button, notification, Table } from 'antd'
+import { Button } from 'antd'
 
-import { Divider } from '@douyinfe/semi-ui'
+import { Divider, Tabs, TabPane } from '@douyinfe/semi-ui'
+// const { TabPane } = Tabs
 
 function Test() {
   return (
-    <Table
-      rowKey="search_query"
-      rowSelection={rowSelection}
-      columns={this.columns}
-      dataSource={data}
-      loading={loading}
-      pagination={pagination}
-      size="small"
-    />
+    <Tabs>
+      <TabPane tab="项目 1" itemKey="item-1">
+        内容 1
+      </TabPane>
+      <TabPane tab="项目 2" itemKey="item-2">
+        内容 2
+      </TabPane>
+    </Tabs>
   )
 }

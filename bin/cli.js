@@ -61,6 +61,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Table',
     value: 'Table'
+  },
+  {
+    name: 'Tabs',
+    value: 'Tabs'
   }
 ]
 
