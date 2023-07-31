@@ -21,7 +21,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 ## TODO
 
 - [x] Divider
-- [ ] Table
+- [x] Table
 - [x] Breadcrumb
 - [x] Notification
 - [ ] message
@@ -29,7 +29,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [ ] Popconfirm
 - [ ] Tooltip
 - [ ] Divider
-- [ ] Tabs
+- [x] Tabs
 - [ ] Drawer
 - [ ] Spin
 - [ ] Empty
