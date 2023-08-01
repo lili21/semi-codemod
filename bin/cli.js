@@ -67,8 +67,8 @@ const TRANSFORMER_INQUIRER_CHOICES = [
     value: 'Tabs'
   },
   {
-    name: 'Toast',
-    value: 'Toast'
+    name: 'Message',
+    value: 'Message'
   },
 ]
 
