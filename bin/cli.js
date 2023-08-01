@@ -77,6 +77,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Spin',
     value: 'Spin'
+  },
+  {
+    name: 'Empty',
+    value: 'Empty'
   }
 ].sort((a, b) => a.name.localeCompare(b.name))
 
