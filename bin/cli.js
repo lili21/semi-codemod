@@ -65,7 +65,11 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Tabs',
     value: 'Tabs'
-  }
+  },
+  {
+    name: 'Toast',
+    value: 'Toast'
+  },
 ]
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
