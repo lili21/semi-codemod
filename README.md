@@ -35,9 +35,9 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Empty
 - [ ] Modal
 - [x] Slider
-- [ ] Popover
+- [x] Popover
 - [ ] Col
 - [ ] Row
 - [ ] Tag
 - [ ] Timeline
-- [ ] Pagenation
+- [ ] Pagination

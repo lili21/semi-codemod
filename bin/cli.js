@@ -85,6 +85,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Slider',
     value: 'Slider'
+  },
+  {
+    name: 'Popover',
+    value: 'Popover'
   }
 ].sort((a, b) => a.name.localeCompare(b.name))
 

@@ -1,11 +1,11 @@
-import { Button, Empty } from 'antd'
+import { Button, Empty, Popover } from 'antd'
 
 import { Divider, Tabs, TabPane } from '@douyinfe/semi-ui'
 
 function Test() {
   return (
-    <Empty>
+    <Popover placement="bottom">
       <button>hello</button>
-    </Empty>
+    </Popover>
   )
 }
