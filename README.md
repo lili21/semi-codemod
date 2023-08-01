@@ -30,11 +30,11 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [ ] Tooltip
 - [ ] Divider
 - [x] Tabs
-- [ ] Drawer
-- [ ] Spin
-- [ ] Empty
+- [x] Drawer
+- [x] Spin
+- [x] Empty
 - [ ] Modal
-- [ ] Slider
+- [x] Slider
 - [ ] Popover
 - [ ] Col
 - [ ] Row
