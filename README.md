@@ -27,7 +27,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] message
 - [ ] Button
 - [ ] Popconfirm
-- [ ] Tooltip
+- [x] Tooltip
 - [ ] Divider
 - [x] Tabs
 - [ ] Drawer
