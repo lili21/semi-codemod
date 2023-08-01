@@ -40,7 +40,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Row
 - [x] Tag
 - [x] Timeline
-- [ ] Collapse
+- [x] Collapse
 - [ ] Pagination
 - [ ] Select
 - [ ] SelectProps

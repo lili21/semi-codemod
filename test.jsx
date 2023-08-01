@@ -1,9 +1,9 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Collapse } from 'antd'
 
 function Test() {
   return (
-    <Row>
+    <Collapse.Panel collapsible="disabled">
       <Col span={24}>col</Col>
-    </Row>
+    </Collapse.Panel>
   )
 }
