@@ -1,11 +1,9 @@
-import { Button, Empty, Popover } from 'antd'
-
-import { Divider, Tabs, TabPane } from '@douyinfe/semi-ui'
+import { Row, Col } from 'antd'
 
 function Test() {
   return (
-    <Popover placement="bottom">
-      <button>hello</button>
-    </Popover>
+    <Row>
+      <Col span={24}>col</Col>
+    </Row>
   )
 }

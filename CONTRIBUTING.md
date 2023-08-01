@@ -10,10 +10,7 @@
 const TRANSFORMER_INQUIRER_CHOICES = [
   ...,
   // 新增在这里即可
-  {
-    name: 'Notification',
-    value: 'Notification'
-  }
+  'Notification'
 ]
 ```
 

@@ -46,51 +46,25 @@ function runTransform({ files, flags, transformer }) {
 }
 
 const TRANSFORMER_INQUIRER_CHOICES = [
-  {
-    name: 'Divider',
-    value: 'Divider'
-  },
-  {
-    name: 'Breadcrumb',
-    value: 'Breadcrumb'
-  },
-  {
-    name: 'Notification',
-    value: 'Notification'
-  },
-  {
-    name: 'Table',
-    value: 'Table'
-  },
-  {
-    name: 'Tabs',
-    value: 'Tabs'
-  },
-  {
-    name: 'Message',
-    value: 'Message'
-  },
-  {
-    name: 'Drawer',
-    value: 'Drawer'
-  },
-  {
-    name: 'Spin',
-    value: 'Spin'
-  },
-  {
-    name: 'Empty',
-    value: 'Empty'
-  },
-  {
-    name: 'Slider',
-    value: 'Slider'
-  },
-  {
-    name: 'Popover',
-    value: 'Popover'
-  }
-].sort((a, b) => a.name.localeCompare(b.name))
+  'Divider',
+  'Breadcrumb',
+  'Notification',
+  'Table',
+  'Tabs',
+  'Message',
+  'Drawer',
+  'Spin',
+  'Empty',
+  'Slider',
+  'Popover',
+  'Col',
+  'Row'
+]
+  .sort((a, b) => a.localeCompare(b))
+  .map((v) => ({
+    name: v,
+    value: v
+  }))
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
   const shouldExpandFiles = filesBeforeExpansion.some((file) =>
