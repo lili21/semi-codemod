@@ -73,8 +73,12 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   {
     name: 'Drawer',
     value: 'Drawer'
+  },
+  {
+    name: 'Spin',
+    value: 'Spin'
   }
-]
+].sort((a, b) => a.name.localeCompare(b.name))
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
   const shouldExpandFiles = filesBeforeExpansion.some((file) =>
