@@ -58,7 +58,9 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   'Slider',
   'Popover',
   'Col',
-  'Row'
+  'Row',
+  'Tag',
+  'Timeline'
 ]
   .sort((a, b) => a.localeCompare(b))
   .map((v) => ({
