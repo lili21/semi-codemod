@@ -1,8 +1,11 @@
-import { message } from 'antd'
+import { Button, Drawer } from 'antd'
 
+import { Divider, Tabs, TabPane } from '@douyinfe/semi-ui'
 
 function Test() {
- 
-  message.error('123');
-  message.error('123');
+  return (
+    <Drawer open={open} onClose={onClose}>
+      <p>hello</p>
+    </Drawer>
+  )
 }

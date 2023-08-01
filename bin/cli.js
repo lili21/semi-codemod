@@ -70,6 +70,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
     name: 'Message',
     value: 'Message'
   },
+  {
+    name: 'Drawer',
+    value: 'Drawer'
+  }
 ]
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
