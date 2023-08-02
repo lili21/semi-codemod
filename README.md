@@ -41,7 +41,6 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Tag
 - [x] Timeline
 - [x] Collapse
-- [ ] Pagination
 - [ ] Select
 - [ ] SelectProps
 - [ ] DatePicker
@@ -62,3 +61,4 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [ ] List
 - [ ] Alert
 - [ ] Menu
+- [ ] Pagination
