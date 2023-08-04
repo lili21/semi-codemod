@@ -8,20 +8,20 @@ export const test = () => {
     Modal.success({
       content: 'some messages...some messages...',
       title: '拉取数据',
-      afterClose:true,
-      autoFocusButton:false,
-      closeIcon:<icon></icon>
+      afterClose: true,
+      autoFocusButton: false,
+      closeIcon: <icon></icon>
     });
-        Modal.info({
+    Modal.info({
       content: 'some messages...some messages...',
       title: '拉取数据',
-      afterClose:true,
-      autoFocusButton:false,
-      closeIcon:<icon></icon>
+      afterClose: true,
+      autoFocusButton: false,
+      closeIcon: <icon></icon>
     });
   }
 
-  return <div>
+  return (<div>
     <Modal
       title="Modal 1000px width"
       centered
@@ -39,8 +39,5 @@ export const test = () => {
       <p>some contents...</p>
       <p>some contents...</p>
     </Modal>
-  </div>
-
-
-
+  </div>)
 }

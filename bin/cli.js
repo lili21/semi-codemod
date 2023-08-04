@@ -63,7 +63,8 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   'Row',
   'Tag',
   'Timeline',
-  'Collapse'
+  'Collapse',
+  'Select'
 ]
   .sort((a, b) => a.localeCompare(b))
   .map((v) => ({
