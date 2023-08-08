@@ -74,6 +74,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
     name: 'Tooltip',
     value: 'Tooltip'
   },
+  {
+    name: 'Modal',
+    value: 'Modal'
+  },
 ]
 
 function expandFilePathsIfNeeded(filesBeforeExpansion) {
