@@ -1,4 +1,4 @@
-import { modal } from 'antd'
+import { Modal } from 'antd'
 
 
 

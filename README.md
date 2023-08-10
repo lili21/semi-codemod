@@ -30,14 +30,35 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Tooltip
 - [ ] Divider
 - [x] Tabs
-- [ ] Drawer
-- [ ] Spin
-- [ ] Empty
+- [x] Drawer
+- [x] Spin
+- [x] Empty
 - [ ] Modal
-- [ ] Slider
-- [ ] Popover
-- [ ] Col
-- [ ] Row
-- [ ] Tag
-- [ ] Timeline
-- [ ] Pagenation
+- [x] Slider
+- [x] Popover
+- [x] Col
+- [x] Row
+- [x] Tag
+- [x] Timeline
+- [x] Collapse
+- [ ] Select
+- [ ] SelectProps
+- [ ] DatePicker
+- [ ] TimePicker
+- [ ] Input
+- [ ] InputNumber
+- [ ] Radio
+- [ ] Switch
+- [ ] Checkbox
+- [ ] Upload
+- [ ] AutoComplete
+- [ ] Dropdown
+- [ ] Form
+- [ ] FormInstance
+- [ ] Icon
+- [ ] Space
+- [ ] Avatar
+- [ ] List
+- [ ] Alert
+- [ ] Menu
+- [ ] Pagination
