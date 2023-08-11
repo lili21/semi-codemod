@@ -52,6 +52,8 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   'Table',
   'Tabs',
   'Message',
+  'Tooltip',
+  'Modal',
   'Drawer',
   'Spin',
   'Empty',
