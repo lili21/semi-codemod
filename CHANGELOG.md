@@ -1,5 +1,14 @@
 
 
+# [0.4.0](https://github.com/lili21/semi-codemod/compare/0.3.0...0.4.0) (2023-08-11)
+
+
+### Features
+
+* Modal支持 ([af93593](https://github.com/lili21/semi-codemod/commit/af93593a3acef32413c10dae89fc713ab4f7434f))
+* Select组件支持 ([213961a](https://github.com/lili21/semi-codemod/commit/213961a8a40ae173a5dee59e30bd4a0b601deb1c))
+* Tooltip支持 ([225e643](https://github.com/lili21/semi-codemod/commit/225e6430819c8df8e7c58af6c931520c83ee9752))
+
 # [0.3.0](https://github.com/lili21/semi-codemod/compare/0.2.0...0.3.0) (2023-08-01)
 
 
