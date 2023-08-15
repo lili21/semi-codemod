@@ -33,7 +33,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [x] Drawer
 - [x] Spin
 - [x] Empty
-- [ ] Modal
+- [x] Modal
 - [x] Slider
 - [x] Popover
 - [x] Col
