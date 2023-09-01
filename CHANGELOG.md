@@ -1,5 +1,12 @@
 
 
+# [0.5.0](https://github.com/lili21/semi-codemod/compare/0.4.0...0.5.0) (2023-09-01)
+
+
+### Features
+
+* 支持多选, 选项为已支持的文件内引用的antd组件 ([a3ef9ea](https://github.com/lili21/semi-codemod/commit/a3ef9ea462964a88a1b5c8250c6488507de68cee))
+
 # [0.4.0](https://github.com/lili21/semi-codemod/compare/0.3.0...0.4.0) (2023-08-11)
 
 
