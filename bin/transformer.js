@@ -81,7 +81,8 @@ async function getTransformerChoices(files) {
             tsx: true
           })
           const importDeclaration = result.body.find(
-            (node) => node.type === 'ImportDeclaration'
+            (node) =>
+              node.type === 'ImportDeclaration' && node.source.value === 'antd'
           )
 
           return importDeclaration.specifiers
