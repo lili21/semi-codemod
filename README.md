@@ -3,13 +3,12 @@
 ## Usage
 
 ```
-$ npx semi-codemod <path> <transform>
+$ npx semi-codemod <path>
 ```
 
-Replacing `<path>` and `<transform>` with appropriate values.
+Replacing `<path>` with appropriate values.
 
 * path - files or directory to transform
-* transform - name of transform
 * --dry Do a dry-run, no code will be edited
 * --print Prints the changed output for comparison
 
@@ -28,7 +27,7 @@ Replacing `<path>` and `<transform>` with appropriate values.
 - [ ] Button
 - [ ] Popconfirm
 - [x] Tooltip
-- [ ] Divider
+- [x] Divider
 - [x] Tabs
 - [x] Drawer
 - [x] Spin
