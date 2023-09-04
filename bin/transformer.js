@@ -85,12 +85,16 @@ async function getTransformerChoices(files) {
               node.type === 'ImportDeclaration' && node.source.value === 'antd'
           )
 
-          return importDeclaration.specifiers
-            .filter((specifier) => specifier.local.value !== 'default')
-            .map((specifier) => {
-              const value = specifier.local.value
-              return value.charAt(0).toUpperCase() + value.slice(1)
-            })
+          if (importDeclaration) {
+            return importDeclaration.specifiers
+              .filter((specifier) => specifier.local.value !== 'default')
+              .map((specifier) => {
+                const value = specifier.local.value
+                return value.charAt(0).toUpperCase() + value.slice(1)
+              })
+          } else {
+            return []
+          }
         } catch (e) {
           console.error(e)
           return []
