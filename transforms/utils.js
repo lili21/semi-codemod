@@ -1,4 +1,9 @@
-module.exports.removeAntdImportAndAddSemiImport = (j, root, antdComponentName, semiCompomentName) => {
+module.exports.removeAntdImportAndAddSemiImport = (
+  j,
+  root,
+  antdComponentName,
+  semiCompomentName
+) => {
   // Find the import declaration for antd
   const antdImportDeclaration = root.find(j.ImportDeclaration, {
     source: {
@@ -52,5 +57,25 @@ module.exports.removeAntdImportAndAddSemiImport = (j, root, antdComponentName, s
   // Remove the antd import
   if (antdComponentSpecifier.length && namedSpecifiers.length === 1) {
     antdImportDeclaration.remove()
+  }
+}
+
+module.exports.appendSemiImport = (j, root, semiCompomentName) => {
+  const semiUiImportDeclaration = root.find(j.ImportDeclaration, {
+    source: {
+      value: '@douyinfe/semi-ui'
+    }
+  })
+
+  if (
+    !semiUiImportDeclaration.find(j.ImportSpecifier, {
+      imported: {
+        name: semiCompomentName
+      }
+    }).length
+  ) {
+    semiUiImportDeclaration
+      .get('specifiers')
+      .push(j.importSpecifier(j.identifier(semiCompomentName)))
   }
 }

@@ -24,8 +24,8 @@ Replacing `<path>` with appropriate values.
 - [x] Breadcrumb
 - [x] Notification
 - [x] message
-- [ ] Button
-- [ ] Popconfirm
+- [x] Button
+- [x] Popconfirm
 - [x] Tooltip
 - [x] Divider
 - [x] Tabs
@@ -40,6 +40,7 @@ Replacing `<path>` with appropriate values.
 - [x] Tag
 - [x] Timeline
 - [x] Collapse
+- [x] Space
 - [x] Select
 - [ ] SelectProps
 - [ ] DatePicker
