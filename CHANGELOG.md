@@ -1,5 +1,12 @@
 
 
+## [0.6.2](https://github.com/lili21/semi-codemod/compare/0.6.1...0.6.2) (2023-09-04)
+
+
+### Bug Fixes
+
+* link and danger ([4d237ee](https://github.com/lili21/semi-codemod/commit/4d237ee6ebf8a50e9790b698ecaa0f0049d4d6d1))
+
 ## [0.6.1](https://github.com/lili21/semi-codemod/compare/0.6.0...0.6.1) (2023-09-04)
 
 
