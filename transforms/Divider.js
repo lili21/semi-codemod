@@ -15,6 +15,9 @@ module.exports = function transformer(file, api) {
         attr.name.name = 'align'
       }
     })
+    element.node.openingElement.attributes.push(
+      j.jsxAttribute(j.jsxIdentifier('margin'), j.literal('0.5rem'))
+    )
   })
 
   return root.toSource()

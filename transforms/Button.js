@@ -41,23 +41,27 @@ module.exports = function transformer(file, api) {
         (attr) => attr.name.name === 'href'
       )
 
-      // Create an object expression for the 'link' attribute
-      const linkObject = j.jsxExpressionContainer(
-        j.objectExpression([
-          j.objectProperty(
-            j.identifier('target'),
-            targetAttribute ? targetAttribute.value : null
-          ),
-          j.objectProperty(
-            j.identifier('href'),
-            hrefAttribute ? hrefAttribute.value : null
-          )
-        ])
-      )
+      if (targetAttribute && hrefAttribute) {
+        // Create an object expression for the 'link' attribute
+        const linkObject = j.jsxExpressionContainer(
+          j.objectExpression([
+            j.objectProperty(
+              j.identifier('target'),
+              targetAttribute ? targetAttribute.value : null
+            ),
+            j.objectProperty(
+              j.identifier('href'),
+              hrefAttribute ? hrefAttribute.value : null
+            )
+          ])
+        )
 
-      openingElement.attributes = [
-        j.jsxAttribute(j.jsxIdentifier('link'), linkObject)
-      ]
+        openingElement.attributes = [
+          j.jsxAttribute(j.jsxIdentifier('link'), linkObject)
+        ]
+      } else {
+        openingElement.attributes = [j.jsxAttribute(j.jsxIdentifier('link'))]
+      }
     })
 
   // 处理其他Button
