@@ -41,6 +41,11 @@ module.exports = function transformer(file, api) {
         (attr) => attr.name.name === 'href'
       )
 
+      // 处理 danger
+      const dangerAttr = openingElement.attributes.find(
+        (attr) => attr.name.name === 'danger'
+      )
+
       if (targetAttribute && hrefAttribute) {
         // Create an object expression for the 'link' attribute
         const linkObject = j.jsxExpressionContainer(
@@ -62,6 +67,12 @@ module.exports = function transformer(file, api) {
       } else {
         openingElement.attributes = [j.jsxAttribute(j.jsxIdentifier('link'))]
       }
+
+      if (dangerAttr) {
+        openingElement.attributes.push(
+          j.jsxAttribute(j.jsxIdentifier('type'), j.literal('danger'))
+        )
+      }
     })
 
   // 处理其他Button
@@ -74,7 +85,6 @@ module.exports = function transformer(file, api) {
 
     // 处理 danger
     const dangerAttr = attributes.find((attr) => attr.name.name === 'danger')
-    console.log(dangerAttr)
 
     if (dangerAttr) {
       const typeAttr = attributes.find((attr) => attr.name.name === 'type')
