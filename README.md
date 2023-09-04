@@ -56,7 +56,6 @@ Replacing `<path>` with appropriate values.
 - [ ] Form
 - [ ] FormInstance
 - [ ] Icon
-- [ ] Space
 - [ ] Avatar
 - [ ] List
 - [ ] Alert

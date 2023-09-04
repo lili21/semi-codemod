@@ -68,6 +68,12 @@ module.exports = function transformer(file, api) {
         openingElement.attributes = [j.jsxAttribute(j.jsxIdentifier('link'))]
       }
 
+      openingElement.attributes.push(
+        j.jsxAttribute(
+          j.jsxIdentifier('weight'),
+          j.jsxExpressionContainer(j.literal(400))
+        )
+      )
       if (dangerAttr) {
         openingElement.attributes.push(
           j.jsxAttribute(j.jsxIdentifier('type'), j.literal('danger'))
