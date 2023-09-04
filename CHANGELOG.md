@@ -1,5 +1,12 @@
 
 
+## [0.6.1](https://github.com/lili21/semi-codemod/compare/0.6.0...0.6.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* 处理Button link 和 Divider margin ([e61698e](https://github.com/lili21/semi-codemod/commit/e61698e3a9c67e36b74bb0215e3feec89b55988d))
+
 # [0.6.0](https://github.com/lili21/semi-codemod/compare/0.5.2...0.6.0) (2023-09-04)
 
 
