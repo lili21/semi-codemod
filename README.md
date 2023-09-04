@@ -40,7 +40,7 @@ Replacing `<path>` with appropriate values.
 - [x] Tag
 - [x] Timeline
 - [x] Collapse
-- [ ] Select
+- [x] Select
 - [ ] SelectProps
 - [ ] DatePicker
 - [ ] TimePicker

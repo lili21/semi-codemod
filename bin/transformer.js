@@ -63,7 +63,8 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   'Timeline',
   'Collapse',
   'Select',
-  'Popconfirm'
+  'Popconfirm',
+  'Space'
 ]
   .sort((a, b) => a.localeCompare(b))
   .map((v) => ({
