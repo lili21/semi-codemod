@@ -1,5 +1,12 @@
 
 
+## [0.5.2](https://github.com/lili21/semi-codemod/compare/0.5.1...0.5.2) (2023-09-04)
+
+
+### Bug Fixes
+
+* Table组件分页API差异处理 ([22f3388](https://github.com/lili21/semi-codemod/commit/22f3388d3a687f033b43e5780636c0e9f4fe1438))
+
 ## [0.5.1](https://github.com/lili21/semi-codemod/compare/0.5.0...0.5.1) (2023-09-01)
 
 
