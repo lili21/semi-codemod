@@ -1,5 +1,14 @@
 
 
+# [0.6.0](https://github.com/lili21/semi-codemod/compare/0.5.2...0.6.0) (2023-09-04)
+
+
+### Features
+
+* 支持Button ([f8d8f77](https://github.com/lili21/semi-codemod/commit/f8d8f77fd26fdef5a254ba65b0eba9c12cfe826f))
+* 支持Popconfirm ([e2c5aa8](https://github.com/lili21/semi-codemod/commit/e2c5aa8e1e946e6864b541cdf3f16dda7f515f2d))
+* 支持Space ([9a167e2](https://github.com/lili21/semi-codemod/commit/9a167e25612cb17e509b7c584907069ca22d7c05))
+
 ## [0.5.2](https://github.com/lili21/semi-codemod/compare/0.5.1...0.5.2) (2023-09-04)
 
 
