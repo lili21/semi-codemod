@@ -81,7 +81,8 @@ async function getTransformerChoices(files) {
         try {
           const result = await swc.parseFile(file, {
             jsx: true,
-            tsx: true
+            tsx: true,
+            decorators: true
           })
           const importDeclaration = result.body.find(
             (node) =>

@@ -9,7 +9,7 @@ module.exports = function transformer(file, api) {
   root.findJSXElements('Table').forEach((element) => {
     root.findJSXElements('Table').forEach((path) => {
       const paginationAttribute = path.node.openingElement.attributes.find(
-        (attribute) => attribute.name.name === 'pagination'
+        (attribute) => attribute.name?.name === 'pagination'
       )
       if (
         paginationAttribute &&
@@ -21,6 +21,12 @@ module.exports = function transformer(file, api) {
           paginationValue.properties.forEach((property) => {
             if (property.key.name === 'current') {
               property.key.name = 'currentPage'
+            }
+            // if (property.key.name === 'defaultPageSize') {
+            //   property.key.name = 'pageSize'
+            // }
+            if (property.key.name === 'pageSizeOptions') {
+              property.key.name = 'pageSizeOpts'
             }
             if (property.key.name === 'showTotal') {
               property.key.name = 'showTotal'
@@ -49,6 +55,14 @@ module.exports = function transformer(file, api) {
               }
             }).forEach((path) => {
               path.node.key.name = 'currentPage'
+            })
+
+            r.find(j.ObjectProperty, {
+              key: {
+                name: 'pageSizeOptions'
+              }
+            }).forEach((path) => {
+              path.node.key.name = 'pageSizeOpts'
             })
 
             r.find(j.ObjectProperty, {
