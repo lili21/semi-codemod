@@ -1,9 +1,5 @@
-import { Table, Space, Button } from 'antd'
+import { Table, Space, Button, Upload } from 'antd'
 
 export const test = () => {
-  return (
-    <Button type="link" danger>
-      数据大盘
-    </Button>
-  )
+  return <Upload />
 }

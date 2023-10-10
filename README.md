@@ -45,12 +45,12 @@ Replacing `<path>` with appropriate values.
 - [ ] SelectProps
 - [ ] DatePicker
 - [ ] TimePicker
-- [ ] Input
-- [ ] InputNumber
-- [ ] Radio
+- [x] Input
+- [x] InputNumber
+- [x] Radio
 - [ ] Switch
 - [ ] Checkbox
-- [ ] Upload
+- [x] Upload
 - [ ] AutoComplete
 - [ ] Dropdown
 - [ ] Form
