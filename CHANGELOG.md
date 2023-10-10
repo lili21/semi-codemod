@@ -1,5 +1,18 @@
 
 
+# [0.7.0](https://github.com/lili21/semi-codemod/compare/0.6.2...0.7.0) (2023-10-10)
+
+
+### Bug Fixes
+
+* decorator support, and Table pagination fix ([834f7b2](https://github.com/lili21/semi-codemod/commit/834f7b228642291e2037b27c0b61b154c8fb34bd))
+* Typography.Text default weight ([8e73439](https://github.com/lili21/semi-codemod/commit/8e734392ecb0aacd6dd3d671bb108097edc0ecce))
+
+
+### Features
+
+* Upload, Input, InputNumber, Radio组件支持 ([ff609b9](https://github.com/lili21/semi-codemod/commit/ff609b906711a58e7532d90d97bad2be8ac272fa))
+
 ## [0.6.2](https://github.com/lili21/semi-codemod/compare/0.6.1...0.6.2) (2023-09-04)
 
 
