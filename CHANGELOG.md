@@ -1,5 +1,12 @@
 
 
+## [0.7.1](https://github.com/lili21/semi-codemod/compare/0.7.0...0.7.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* syntax, support tsx ([cb7da4d](https://github.com/lili21/semi-codemod/commit/cb7da4d5af5b84b5d346a885edcfc19790dbac61))
+
 # [0.7.0](https://github.com/lili21/semi-codemod/compare/0.6.2...0.7.0) (2023-10-10)
 
 
