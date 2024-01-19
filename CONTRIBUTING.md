@@ -4,7 +4,7 @@
 
 ### 第一步
 
-在 `bin/cli.js` 文件中新增组件选项
+在 `bin/transforms.js` 文件中新增组件选项
 
 ```js
 const TRANSFORMER_INQUIRER_CHOICES = [
