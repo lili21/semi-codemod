@@ -11,7 +11,7 @@ module.exports = function transformer(file, api) {
 
   removeAntdImportAndAddSemiImport(j, root, 'Switch', 'Switch')
 
-  // Find all JSXElements with the name "Popover"
+  // Find all JSXElements with the name "Switch"
   root.findJSXElements('Switch').forEach((path) => {
     path.node.openingElement.attributes.forEach((attr) => {
       if (Object.keys(attributeMappings).includes(attr.name.name)) {

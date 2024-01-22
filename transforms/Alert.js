@@ -10,7 +10,7 @@ export default function transformer(file, api) {
   root.findJSXElements('Alert').forEach((path) => {
     const { openingElement } = path.value
 
-    // Find the "message" attribute and replace it with "position"
+    // Find the "message" attribute and replace it with "title"
     const messageAttribute = openingElement.attributes.find(
       (attr) => attr.name.name === 'message'
     )
