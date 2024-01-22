@@ -1,5 +1,12 @@
 
 
+# [0.8.0](https://github.com/lili21/semi-codemod/compare/0.7.1...0.8.0) (2024-01-22)
+
+
+### Features
+
+* add Card Switch Alert & fix Tooltip ([8c8ff65](https://github.com/lili21/semi-codemod/commit/8c8ff65d4ba045ceba2d62e7e9fec8eae9c661cf))
+
 ## [0.7.1](https://github.com/lili21/semi-codemod/compare/0.7.0...0.7.1) (2024-01-17)
 
 
