@@ -69,7 +69,10 @@ const TRANSFORMER_INQUIRER_CHOICES = [
   'InputNumber',
   'Radio',
   'Upload',
-  'Input'
+  'Input',
+  'Switch',
+  'Alert',
+  'Card'
 ]
   .sort((a, b) => a.localeCompare(b))
   .map((v) => ({

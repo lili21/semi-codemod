@@ -48,7 +48,8 @@ Replacing `<path>` with appropriate values.
 - [x] Input
 - [x] InputNumber
 - [x] Radio
-- [ ] Switch
+- [x] Switch
+- [x] Card
 - [ ] Checkbox
 - [x] Upload
 - [ ] AutoComplete
@@ -58,6 +59,6 @@ Replacing `<path>` with appropriate values.
 - [ ] Icon
 - [ ] Avatar
 - [ ] List
-- [ ] Alert
+- [x] Alert
 - [ ] Menu
 - [ ] Pagination
